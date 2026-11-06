@@ -63,26 +63,26 @@ A known-malware hash match short-circuits straight to `CRITICAL`.
 
 ```bash
 # Install the needed packages
-python scanner.py install
+.\Scanner.exe install
 
 # Scan a single file
-python scanner.py scan ./suspicious.exe
+.\Scanner.exe scan ./suspicious.exe
 
 # Scan a whole directory (recursive)
-python scanner.py scan ~/Downloads
+.\Scanner.exe scan ~/Downloads
 
 # Skip VirusTotal upload, hash lookup only
-python scanner.py scan ./script.py --no-vt-upload
+.\Scanner.exe scan ./script.py --no-vt-upload
 
 # Heuristics-only, no ClamAV or VirusTotal
-python scanner.py scan ./file --no-vt --no-clamav
+.\Scanner.exe scan ./file --no-vt --no-clamav
 
 # Watch a folder in real time, auto-quarantining high-risk files
-python scanner.py watch ~/Downloads --quarantine
+.\Scanner.exe watch ~/Downloads --quarantine
 
 # Manage the local malware hash database
-python scanner.py add-hash sha256 <hash>
-python scanner.py db
+.\Scanner.exe add-hash sha256 <hash>
+.\Scanner.exe.py db
 ```
 
 Results print to the console with color-coded severity and are saved as a
