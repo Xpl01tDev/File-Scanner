@@ -37,12 +37,6 @@ No internet connection or third-party service required. For every file it:
 If a local ClamAV daemon or the `clamscan` CLI is available, the file is also
 submitted to ClamAV and its verdict is folded into the overall result.
 
-### 3. VirusTotal integration (optional)
-If a `VT_API_KEY` is set, the scanner will:
-- Look up the file's SHA256 hash against VirusTotal's existing database.
-- Optionally upload the file itself (files ≤32 MB) for a fresh multi-engine
-  scan, polling for results.
-
 ## Risk scoring
 
 Every signal — hash-DB hits, ClamAV verdicts, VirusTotal detections, entropy,
