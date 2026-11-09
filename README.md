@@ -82,7 +82,7 @@ A known-malware hash match short-circuits straight to `CRITICAL`.
 
 # Manage the local malware hash database
 .\Scanner.exe add-hash sha256 <hash>
-.\Scanner.exe.py db
+.\Scanner.exe db
 ```
 
 Results print to the console with color-coded severity and are saved as a
